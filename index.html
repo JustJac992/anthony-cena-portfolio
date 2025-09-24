@@ -3,48 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anthony Cena | Video Editor Portfolio</title>
+  <title>Anthony Cena | Professional Video Editor</title>
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
+    body, h1, h2, p { margin: 0; padding: 0; }
+    body {
       font-family: Arial, sans-serif;
-      color: white;
-      background: url('https://images.unsplash.com/photo-1606813909021-d6e4d7d3d6cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      height: 100%;
-    }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
-      padding: 20px;
+      line-height: 1.6;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1603791452906-b0f6b54a5d5f') no-repeat center center/cover;
+      background-attachment: fixed;
     }
 
     header {
+      background: rgba(0,0,0,0.7);
       text-align: center;
-      padding: 60px 20px;
+      padding: 100px 20px;
     }
-
     header h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
-
     header p {
       font-size: 1.2rem;
-      color: #ddd;
+      font-style: italic;
+    }
+    header a {
+      background:#ff4747;
+      color:white;
+      padding:12px 24px;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      display:inline-block;
+      margin-top:20px;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.85);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     section {
       padding: 60px 20px;
+      background: rgba(0,0,0,0.7);
+      margin: 20px auto;
       max-width: 1000px;
-      margin: auto;
+      border-radius: 12px;
     }
-
-    h2 {
+    section h2 {
       text-align: center;
       margin-bottom: 30px;
       font-size: 2rem;
+      color: #ff4747;
     }
 
     .portfolio {
@@ -52,75 +72,87 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
     }
-
-    .video-box {
-      background: rgba(255, 255, 255, 0.1);
+    .portfolio div {
+      background: rgba(255,255,255,0.08);
       padding: 15px;
       border-radius: 10px;
       text-align: center;
     }
-
-    .video-box iframe {
+    iframe {
       width: 100%;
       height: 200px;
-      border-radius: 8px;
+      border-radius: 10px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background: rgba(0, 0, 0, 0.8);
-      margin-top: 40px;
+      background: rgba(0,0,0,0.9);
+      margin-top: 30px;
     }
-
-    a {
-      color: #00ffff;
+    footer a {
+      color: #ff4747;
       text-decoration: none;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <header>
-      <h1>Anthony Cena</h1>
-      <p>Crafting Stories Through Editing</p>
-    </header>
+  <!-- HERO / HEADER -->
+  <header>
+    <h1>Anthony Cena</h1>
+    <p>Creativity. Precision. Impact.</p>
+    <a href="#contact">Let’s Work Together</a>
+  </header>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I’m a passionate video editor who transforms raw footage into engaging and professional content. 
-        From talking head videos to cinematic edits and promotional ads, I focus on precision, creativity, and impact 
-        to help clients bring their vision to life.
-      </p>
-    </section>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="portfolio">
-      <h2>My Portfolio</h2>
-      <div class="portfolio">
-        <div class="video-box">
-          <h3>Talking Head Video</h3>
-          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-box">
-          <h3>Cinematic Edit</h3>
-          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="video-box">
-          <h3>Ad / Promotional Video</h3>
-          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
-        </div>
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <b>Anthony Cena</b>, a passionate video editor helping brands, creators, and businesses transform raw footage into professional and engaging content.  
+    I specialize in cinematic edits, ad videos, and talking-head content designed to grab attention and deliver results.</p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <div>
+        <h3>Talking Head Video</h3>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
       </div>
-    </section>
+      <div>
+        <h3>Cinematic Edit</h3>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div>
+        <h3>Ad Video</h3>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-    </section>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Let’s create something amazing!  
+    Email me at: <b>your.email@example.com</b></p>
+  </section>
 
-    <footer>
-      <p>© 2025 Anthony Cena | Video Editing Portfolio</p>
-    </footer>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Anthony Cena | Video Editor</p>
+    <p>
+      <a href="https://www.youtube.com/yourchannel" target="_blank">YouTube</a> |
+      <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a> |
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 </body>
 </html>
